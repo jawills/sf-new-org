@@ -9,8 +9,10 @@ This template quickstarts the ability of onboarding a new Salesforce org. Quickl
 ## Downloading Metadata From Salesforce
 
 1. Open VS Code
-2. Open the `manifest` folder.
-3. Right click on the `package.xml` and select `SFDX: Retrieve Source in Manifest from Org`
+2. Authenticate with Salesforce using the `sf` CLI.
+3. Open the `manifest` folder.
+4. Right click on the `package.xml` and select `SFDX: Retrieve Source in Manifest from Org`
+5. Delete the `.gitkeep` file inside the `force-app` directory.
 
 Allow the Metadata API to run and download source data from Salesforce. Customize the `package.xml` as needed for your needs. For more information check out this [video](https://youtu.be/SDFRU_-YZjk) on how to use the metadata api.
 
