@@ -8,5 +8,5 @@
   "name": "sf-org-template",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "59.0"
+  "sourceApiVersion": "60.0"
 }
