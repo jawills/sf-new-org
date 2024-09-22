@@ -25,3 +25,32 @@ Github actions come as default to enable a deployment pipeline. To enable pushin
 3. Ensure the target branch name is correct. The default branch is `master`.
 
 To add additional environments, clone the `deploy-production.yml` and `validate-production.yml`. To learn more about using a developer pipeline, check out the following [tutorial](https://youtu.be/R31DWnkiYpY).
+
+## Deploy Conga Composer
+
+We can use [SFDMU](https://github.com/forcedotcom/SFDX-Data-Move-Utility) to move data from Sandbox to Production (Or Vice-Versa).
+
+## Configuration
+
+[Full Tutorial Here](https://www.1sync.co/deploy-conga-composer-production)
+
+There are two files that need to be updated in the `conga/scripts` folder:
+
+- `push-prod.sh`
+- `refresh-sb.sh`
+
+Replace `SB_USERNAME` with your Sandbox Alias, and `PROD_USERNAME` with your Production Alias.
+
+Then, to push changes to production, run:
+
+```bash
+cd scripts/conga
+sh push-prod.sh
+```
+
+or to refresh sandbox:
+
+```bash
+cd scripts/conga
+sh refresh-sb.sh
+```

@@ -61,3 +61,7 @@ scripts/*.key
 scripts/*.crt
 *.temp
 *.todo
+
+## SFDMU
+scripts/conga/binary_cache/
+scripts/conga/target

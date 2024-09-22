@@ -1,0 +1,33 @@
+{
+  "objects": [
+    {
+      "query": "SELECT all FROM APXTConga4__Conga_Template__c",
+      "operation": "Upsert",
+      "externalId": "APXTConga4__Key__c",
+      "afterAddons": [
+        {
+          "module": "core:ExportFiles",
+          "args": {
+            "operation": "Upsert",
+            "contentDocumentLinkOrderBy": "ContentDocument.CreatedDate DESC"
+          }
+        }
+      ]
+    },
+    {
+      "query": "SELECT all FROM APXTConga4__Conga_Merge_Query__c",
+      "operation": "Upsert",
+      "externalId": "APXTConga4__Key__c"
+    },
+    {
+      "query": "SELECT all FROM APXTConga4__Conga_Email_Template__c",
+      "operation": "Upsert",
+      "externalId": "APXTConga4__Key__c"
+    },
+    {
+      "query": "SELECT all FROM APXTConga4__Conga_Solution__c",
+      "operation": "Upsert",
+      "externalId": "Name"
+    }
+  ]
+}
