@@ -30,7 +30,7 @@ To add additional environments, clone the `deploy-production.yml` and `validate-
 
 We can use [SFDMU](https://github.com/forcedotcom/SFDX-Data-Move-Utility) to move data from Sandbox to Production (Or Vice-Versa).
 
-## Configuration
+### Configuration
 
 [Full Tutorial Here](https://www.1sync.co/deploy-conga-composer-production)
 
@@ -53,4 +53,16 @@ or to refresh sandbox:
 ```bash
 cd scripts/conga
 sh refresh-sb.sh
+```
+
+## Backup Salesforce Metadata
+
+We can backup the salesforce metadata nighly (or on-demand) using Github Actions.
+
+Learn more by following [this]() tutorial.
+
+**TLDR:** Uncomment the following line in the file `backup-salesforce-metadata.yml`
+
+```yml
+- cron: "0 0 * * *"
 ```
