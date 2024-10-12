@@ -65,3 +65,16 @@ scripts/*.crt
 ## SFDMU
 scripts/conga/binary_cache/
 scripts/conga/target
+
+# test artifacts
+*xunit.xml
+*checkstyle.xml
+*unitcoverage
+.nyc_output
+coverage
+test_session*
+
+# SFDX Hardis
+hardis-report/
+megalinter-reports/
+config/user/
