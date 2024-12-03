@@ -59,10 +59,22 @@ sh refresh-sb.sh
 
 We can backup the salesforce metadata nighly (or on-demand) using Github Actions.
 
-Learn more by following [this]() tutorial.
+Learn more by following [this](https://www.1sync.co/backup-salesforce-metadata-free) tutorial.
 
-**TLDR:** Uncomment the following line in the file `backup-salesforce-metadata.yml`
+To set the time of the backup, edit this cron expression.
 
 ```yml
 - cron: "0 0 * * *"
+```
+
+This will run every night at 12am (00:00) UTC.
+
+## Code Formatting
+
+This template uses the prettier and prettier-apex plugins to auto format.
+
+To configure:
+
+```bash
+npm install
 ```
